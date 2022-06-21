@@ -9,28 +9,18 @@ public class Solution
         
         int answer = 1;
         
-        Dictionary<char, int> count = new Dictionary<char, int>();
+        Dictionary<char, int> charToIndexMap = new Dictionary<char, int>();
         
         int l = 0;
         for (int r = 0; r < s.Length; r++)
         {
-            count[s[r]] = count.GetValueOrDefault(s[r], 0) + 1;
-            if (count[s[r]] > 1)
+            if (charToIndexMap.ContainsKey(s[r]))
             {
-                while (count[s[r]] > 1)
-                {
-                    count[s[l]]--;
-                    if (count[s[l]] == 0)
-                    {
-                        count.Remove(s[l]);
-                    }
-                    l++;
-                }
+                l = Math.Max(l, charToIndexMap[s[r]] + 1);
             }
-            else
-            {
-                answer = Math.Max(answer, r - l + 1);
-            }
+            
+            answer = Math.Max(answer, r - l + 1);
+            charToIndexMap[s[r]] = r;
         }
         return answer;
     }
