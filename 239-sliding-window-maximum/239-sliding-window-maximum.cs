@@ -4,6 +4,7 @@ public class Solution
     {
         int[] maximumValues = new int[nums.Length - k + 1];
         
+        // monotonically decreasing queue
         var indeciesOfMaxValues = new LinkedList<int>();
         
         int l = 0;
