@@ -8,9 +8,10 @@ public class Solution
         {
             if (nums[i] == 0)
             {
-                int temp = nums[i];
-                nums[i] = nums[low];
-                nums[low] = temp;
+                Swap(nums, i, low);
+                //int temp = nums[i];
+                //nums[i] = nums[low];
+                //nums[low] = temp;
                 low++;
                 i++;
             }
@@ -20,11 +21,19 @@ public class Solution
             }
             else
             {
-                int temp = nums[i];
-                nums[i] = nums[high];
-                nums[high] = temp;
+                Swap(nums, i, high);
+                //int temp = nums[i];
+                //nums[i] = nums[high];
+                //nums[high] = temp;
                 high--;
             }
         }
+    }
+    
+    private void Swap(int[] arr, int i, int j)
+    {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
     }
 }
