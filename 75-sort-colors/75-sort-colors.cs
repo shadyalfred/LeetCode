@@ -9,9 +9,6 @@ public class Solution
             if (nums[i] == 0)
             {
                 Swap(nums, i, low);
-                //int temp = nums[i];
-                //nums[i] = nums[low];
-                //nums[low] = temp;
                 low++;
                 i++;
             }
@@ -22,9 +19,6 @@ public class Solution
             else
             {
                 Swap(nums, i, high);
-                //int temp = nums[i];
-                //nums[i] = nums[high];
-                //nums[high] = temp;
                 high--;
             }
         }
