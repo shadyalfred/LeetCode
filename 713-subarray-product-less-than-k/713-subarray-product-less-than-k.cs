@@ -9,7 +9,6 @@ public class Solution
         {
             product *= nums[i];
             
-            int r = i + 1;
             while (product >= k)
             {
                 product /= nums[left++];
