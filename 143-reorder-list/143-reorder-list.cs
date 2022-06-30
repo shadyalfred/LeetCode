@@ -43,7 +43,7 @@ public class Solution
             secondHead = temp;
         }
         
-        if (firstHead != null && firstHead.next != null)
+        if (firstHead != null)
         {
             firstHead.next = null;
         }
