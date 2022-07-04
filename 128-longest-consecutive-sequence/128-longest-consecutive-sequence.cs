@@ -15,11 +15,10 @@ public class Solution
                 continue;
             }
             
-            int seqLen = 1;
+            int seqLen = 0;
             
-            while (numSet.Contains(num + 1))
+            while (numSet.Contains(num + seqLen))
             {
-                num++;
                 seqLen++;
             }
             
