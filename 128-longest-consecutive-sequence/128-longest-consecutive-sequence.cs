@@ -2,7 +2,7 @@ public class Solution
 {
     public int LongestConsecutive(int[] nums)
     {
-        var hashSet = new HashSet<int>(nums);
+        var numSet = new HashSet<int>(nums);
         
         int maxSeq = 0;
         
@@ -10,14 +10,14 @@ public class Solution
         {
             var num = nums[i];
             
-            if (hashSet.Contains(num - 1))
+            if (numSet.Contains(num - 1))
             {
                 continue;
             }
             
             int seqLen = 1;
             
-            while (hashSet.Contains(num + 1))
+            while (numSet.Contains(num + 1))
             {
                 num++;
                 seqLen++;
