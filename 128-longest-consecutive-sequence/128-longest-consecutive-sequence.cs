@@ -2,19 +2,9 @@ public class Solution
 {
     public int LongestConsecutive(int[] nums)
     {
-        if (nums.Length == 0)
-        {
-            return 0;
-        }
+        var hashSet = new HashSet<int>(nums);
         
-        var hashSet = new HashSet<int>(nums.Length);
-        
-        foreach (var num in nums)
-        {
-            hashSet.Add(num);
-        }
-        
-        int maxSeq = 1;
+        int maxSeq = 0;
         
         for (int i = 0; i < nums.Length; i++)
         {
