@@ -6,7 +6,7 @@ impl Solution {
         
         let mut digits: Vec<i32> = Vec::with_capacity(10);
         
-        while x > 0 {
+        while x != 0 {
             digits.push(x % 10);
             x /= 10;
         }
