@@ -3,16 +3,14 @@ class Solution {
         int i = 0;
         
         while (i < nums.length) {
-            if (nums[i] != nums[nums[i] - 1]) {
-                swap(i, nums[i] - 1, nums);
+            if (nums[i] != i + 1) {
+                if (nums[i] == nums[nums[i] - 1]) {
+                    return nums[i];
+                } else {
+                    swap(i, nums[i] - 1, nums);
+                }
             } else {
                 i++;
-            }
-        }
-        
-        for (i = 0; i < nums.length; i++) {
-            if (nums[i] - 1 != i) {
-                return nums[i];
             }
         }
         
