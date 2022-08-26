@@ -1,19 +1,24 @@
 class Solution {
     private int n = 0;
     
-    private void helper(List<String> solutions, String str, int open, int close) {
+    private void helper(List<String> solutions, StringBuilder sb, int open, int close) {
         if (open < n) {
-            helper(solutions, str + "(", open + 1, close);
+            helper(solutions, sb.append("("), open + 1, close);
+            sb.deleteCharAt(sb.length() - 1);
                 
             if (close < open) {
-                helper(solutions, str + ")", open, close + 1);
+                helper(solutions, sb.append(")"), open, close + 1);
+                sb.deleteCharAt(sb.length() - 1);
             }
         } else {
             for (int i = 0; i < open - close; i++) {
-                str += ")";
+                sb.append(")");
             }
             
-            solutions.add(str);
+            solutions.add(sb.toString());
+            
+            sb.delete(sb.length() - (open - close), sb.length());
+            
         }
     }
     
@@ -22,7 +27,9 @@ class Solution {
         
         List<String> solutions = new ArrayList<>();
         
-        helper(solutions, "", 0, 0);
+        StringBuilder sb = new StringBuilder(n * 2);
+        
+        helper(solutions, sb, 0, 0);
         
         return solutions;
     }
