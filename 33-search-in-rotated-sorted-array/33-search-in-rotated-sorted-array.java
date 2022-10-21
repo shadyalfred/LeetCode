@@ -10,13 +10,16 @@ class Solution {
                 return mid;
             }
             
+            // Left sorted side 
             if (nums[l] <= nums[mid]) {
+                //  normal binary search || target lies on the other side
                 if (target > nums[mid] || target < nums[l]) {
                     l = mid + 1;
                 } else {
                     h = mid - 1;
                 }
             } else {
+                //  normal binary search || target lies on the other side
                 if (target < nums[mid] || target > nums[h]) {
                     h = mid - 1;
                 } else {
