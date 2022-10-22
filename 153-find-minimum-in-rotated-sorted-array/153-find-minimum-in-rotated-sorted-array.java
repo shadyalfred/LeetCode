@@ -6,8 +6,7 @@ class Solution {
         
         while (l <= h) {
             if (nums[l] <= nums[h]) {
-                min = Math.min(min, nums[l]);
-                break;
+                return Math.min(min, nums[l]);
             }
             
             int mid = (l + h) / 2;
