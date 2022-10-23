@@ -44,7 +44,10 @@ class TimeMap {
             int mid = (l + h) / 2;
             
             var entry = list.get(mid);
-            if (entry.timestamp <= targetTimestamp) {
+            
+            if (entry.timestamp == targetTimestamp) {
+                return entry;
+            } else if (entry.timestamp < targetTimestamp) {
                 l = mid + 1;
                 maxEntry = entry;   
             } else {
