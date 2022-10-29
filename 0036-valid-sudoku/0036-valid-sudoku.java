@@ -1,26 +1,27 @@
 class Solution {
+
     public boolean isValidSudoku(char[][] board) {
         int rows = board.length;
         int cols = board[0].length;
-        
+
         // check rows
         Set<Character> seen = null;
-        
+
         for (int i = 0; i < rows; i++) {
             seen = new HashSet<>();
             for (int j = 0; j < cols; j++) {
                 if (board[i][j] == '.') {
                     continue;
                 }
-                
+
                 if (seen.contains(board[i][j])) {
                     return false;
                 }
-                
+
                 seen.add(board[i][j]);
             }
         }
-        
+
         // check cols
         for (int i = 0; i < cols; i++) {
             seen = new HashSet<>();
@@ -32,11 +33,11 @@ class Solution {
                 if (seen.contains(board[j][i])) {
                     return false;
                 }
-                
+
                 seen.add(board[j][i]);
             }
         }
-        
+
         seen = null;
         
         // check blocks
@@ -47,10 +48,10 @@ class Solution {
                 }
             }
         }
-        
+
         return true;
     }
-    
+
     private boolean checkBlock(int row, int col, char[][] board) {
         Set<Character> seen = new HashSet<>();
         
@@ -62,15 +63,15 @@ class Solution {
                 if (board[i][j] == '.') {
                     continue;
                 }
-                
+
                 if (seen.contains(board[i][j])) {
                     return false;
                 }
-                
+
                 seen.add(board[i][j]);
             }
         }
-        
+
         return true;
     }
 }
