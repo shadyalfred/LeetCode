@@ -17,14 +17,14 @@ class Solution {
         ListNode dummy = new ListNode();
         dummy.next = head;
         
-        ListNode first = dummy, second = dummy;
+        ListNode first = dummy, second = head;
         
         while (n > 0) {
             second = second.next;
             n--;
         }
         
-        while (second.next != null) {
+        while (second != null) {
             second = second.next;
             first = first.next;
         }
