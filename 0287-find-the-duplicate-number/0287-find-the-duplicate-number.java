@@ -15,8 +15,7 @@ class Solution {
 
         int slow2 = nums[0];
         
-        while (isFirst || slow != slow2) {
-            if (isFirst) isFirst = false;
+        while (slow != slow2) {
             slow = nums[slow];
             slow2 = nums[slow2];
         }
