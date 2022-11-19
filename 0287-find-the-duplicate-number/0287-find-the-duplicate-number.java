@@ -7,14 +7,12 @@ class Solution {
             if (first) first = false;
             slow = nums[slow];
             fast = nums[nums[fast]];
-            if (fast == slow) break;
         }
         int slow2 = nums[0];
         while (slow2 != slow) {
             if (first) first = false;
             slow2 = nums[slow2];
             slow = nums[slow];
-            if (slow2 == slow) return slow;
         }
         return slow;
     }
