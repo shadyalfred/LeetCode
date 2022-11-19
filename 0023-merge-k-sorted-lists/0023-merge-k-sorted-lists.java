@@ -19,15 +19,15 @@ class Solution {
                 current = current.next;
             }
         }
-        
+
         var dummy = new ListNode();
         var current = dummy;
-        
+
         while (!minHeap.isEmpty()) {
             current.next = new ListNode(minHeap.poll());
             current = current.next;
         }
-        
+
         return dummy.next;
     }
 }
