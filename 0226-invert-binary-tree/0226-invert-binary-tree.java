@@ -27,6 +27,10 @@ class Solution {
             invertTree(root.right);
         }
         
+        if (root.left == null && root.right == null) {
+            return root;
+        }
+        
         var temp = root.left;
         root.left = root.right;
         root.right = temp;
