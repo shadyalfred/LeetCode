@@ -19,14 +19,18 @@ class Solution {
         
         List<List<Integer>> list = new ArrayList();
         
+        if (root == null) {
+            return list;
+        }
+        
         q.add(root);
         
-        while (q.peek() != null) {
+        while (!q.isEmpty()) {
             var level = new ArrayList<Integer>();
             
             Queue<TreeNode> tempQ = new LinkedList();
             
-            while (q.peek() != null) {
+            while (!q.isEmpty()) {
                 var node = q.poll();
                 
                 level.add(node.val);
