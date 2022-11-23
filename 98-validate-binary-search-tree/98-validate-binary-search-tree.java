@@ -21,6 +21,7 @@ class Solution {
         
         return dfs(root, null, null);
     }
+    
     private boolean dfs(TreeNode root, Integer min, Integer max) {
         if (root == null) {
             return true;
