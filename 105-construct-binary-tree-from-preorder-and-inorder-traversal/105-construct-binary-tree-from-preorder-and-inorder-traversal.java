@@ -31,7 +31,7 @@ class Solution {
         }
         
         root.left = buildTree(
-            Arrays.copyOfRange(preorder, 1, preorder.length),
+            Arrays.copyOfRange(preorder, 1, mid + 1),
             Arrays.copyOfRange(inorder, 0, mid));
         
         root.right = buildTree(
