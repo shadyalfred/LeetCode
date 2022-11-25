@@ -22,6 +22,7 @@ class Solution {
         return maxSum;
     }
     
+    // return max sum without split
     private int dfs(TreeNode root) {
         if (root == null) {
             return 0;
