@@ -25,28 +25,28 @@ class WordDictionary {
     }
 
     public boolean search(String word) {
-        return dfs(0, root, word);
+        return dfs(0, this.root, word);
     }
 
     private boolean dfs(int j, Node curr, String word) {
         for (int i = j; i < word.length(); i++) {
-            char ch = word.charAt(i);
+            var c = word.charAt(i);
 
-            if (ch == '.') {
-                for (Node temp : curr.children.values()) {
-                    if (dfs(i + 1, temp, word)) {
+            if (c == '.') {
+                for (var child : curr.children.values()) {
+                    if (dfs(i + 1, child, word)) {
                         return true;
                     }
                 }
 
                 return false;
-            }
+            } else {
+                if (!curr.children.containsKey(c)) {
+                    return false;
+                }
 
-            if (!curr.children.containsKey(ch)) {
-                return false;
+                curr = curr.children.get(c);
             }
-
-            curr = curr.children.get(ch);
         }
 
         return curr.isWord;
