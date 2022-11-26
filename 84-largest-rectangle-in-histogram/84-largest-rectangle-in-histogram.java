@@ -1,6 +1,5 @@
 class Solution {
     public int largestRectangleArea(int[] heights) {
-        
         int area = 0, n = heights.length;
         
         int start;
@@ -29,7 +28,6 @@ class Solution {
         }
 
         while(!stack.isEmpty()){
-            
             Pair<Integer,Integer> pair = stack.pop();
             
             int index = pair.getKey();
