@@ -11,7 +11,7 @@ class Solution {
             
             start = i;
             
-            while(!stack.isEmpty() && stack.peek().getValue() > curHt){
+            while(!stack.isEmpty() && stack.peek().getValue() > curHt) {
                 Pair<Integer,Integer> pair = stack.pop();
                 
                 int index = pair.getKey();
