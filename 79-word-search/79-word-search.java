@@ -37,7 +37,7 @@ class Solution {
             board[i][j] != word.charAt(cur)
         ) return false;
 
-
+        // Mark cell as visited
         board[i][j] += 100;
 
         if (check(i + 1, j, cur + 1) ||
@@ -47,6 +47,7 @@ class Solution {
             return true;
         }
 
+        // unmark cell for backtracking
         board[i][j] -= 100;
 
         return false;
