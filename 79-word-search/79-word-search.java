@@ -1,63 +1,44 @@
 class Solution {
-    char[][] board;
-    int ROWS;
-    int COLS;
-    
-    String targetWord;
-    
-    Set<String> visited = new HashSet();
-    
-    StringBuilder currentWord = new StringBuilder();
-    
     public boolean exist(char[][] board, String word) {
-        this.board = board;
-        
-        this.ROWS = board.length;
-        this.COLS = board[0].length;
-        
-        this.targetWord = word;
-        
-        for (int i = 0; i < board.length; i++) {
-            for (int j = 0; j < board[0].length; j++) {
-                if (visited.contains(i + "-" + j)) continue;
-                if (dfs(i, j, 0)) {
+        int m = board.length;
+        int n = board[0].length;
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (check(board, word, i, j, m, n, 0)) {
                     return true;
                 }
             }
         }
-        
         return false;
     }
-    
-    private boolean dfs(int row, int col, int i) {
-        if (i == targetWord.length()) {
-            return true;
+
+    public boolean check(
+        char[][] board,
+        String word,
+        int i,
+        int j,
+        int m,
+        int n,
+        int cur
+    ) {
+        if (cur >= word.length()) return true;
+        if (
+            i < 0 ||
+            j < 0 ||
+            i >= m ||
+            j >= n ||
+            board[i][j] != word.charAt(cur)
+        ) return false;
+        boolean exist = false;
+        if (board[i][j] == word.charAt(cur)) {
+            board[i][j] += 100;
+            exist =
+                check(board, word, i + 1, j, m, n, cur + 1) ||
+                check(board, word, i, j + 1, m, n, cur + 1) ||
+                check(board, word, i - 1, j, m, n, cur + 1) ||
+                check(board, word, i, j - 1, m, n, cur + 1);
+            board[i][j] -= 100;
         }
-        
-        
-        String coor = row + "-" + col;
-        
-        if (row == ROWS ||
-            row < 0 ||
-            col == COLS ||
-            col < 0 ||
-            targetWord.charAt(i) != board[row][col] ||
-            visited.contains(coor)) {
-            return false;
-        }
-        
-        currentWord.append(board[row][col]);
-        visited.add(coor);
-        if (dfs(row + 1, col, i + 1) ||
-            dfs(row - 1, col, i + 1) ||
-            dfs(row, col + 1, i + 1) ||
-            dfs(row, col - 1, i + 1)) {
-            return true;
-        }
-        
-        currentWord.deleteCharAt(currentWord.length() - 1);
-        visited.remove(coor);
-        
-        return false;
+        return exist;
     }
 }
