@@ -39,15 +39,13 @@ class Solution {
 
         boolean exist = false;
 
-        if (board[i][j] == word.charAt(cur)) {
-            board[i][j] += 100;
-            exist =
-                check(i + 1, j, cur + 1) ||
-                check(i, j + 1, cur + 1) ||
-                check(i - 1, j, cur + 1) ||
-                check(i, j - 1, cur + 1);
-            board[i][j] -= 100;
-        }
+        board[i][j] += 100;
+        exist =
+            check(i + 1, j, cur + 1) ||
+            check(i, j + 1, cur + 1) ||
+            check(i - 1, j, cur + 1) ||
+            check(i, j - 1, cur + 1);
+        board[i][j] -= 100;
 
         return exist;
     }
