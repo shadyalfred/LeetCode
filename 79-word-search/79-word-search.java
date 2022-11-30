@@ -37,16 +37,18 @@ class Solution {
             board[i][j] != word.charAt(cur)
         ) return false;
 
-        boolean exist = false;
 
         board[i][j] += 100;
-        exist =
-            check(i + 1, j, cur + 1) ||
+
+        if (check(i + 1, j, cur + 1) ||
             check(i, j + 1, cur + 1) ||
             check(i - 1, j, cur + 1) ||
-            check(i, j - 1, cur + 1);
+            check(i, j - 1, cur + 1)) {
+            return true;
+        }
+
         board[i][j] -= 100;
 
-        return exist;
+        return false;
     }
 }
