@@ -1,10 +1,20 @@
 class Solution {
+    int ROWS;
+    int COLS;
+    char[][] board;
+
+    String word;
     public boolean exist(char[][] board, String word) {
-        int m = board.length;
-        int n = board[0].length;
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                if (check(board, word, i, j, m, n, 0)) {
+        this.board = board;
+
+        ROWS = board.length;
+        COLS = board[0].length;
+
+        this.word = word;
+
+        for (int i = 0; i < ROWS; i++) {
+            for (int j = 0; j < COLS; j++) {
+                if (check(i, j, 0)) {
                     return true;
                 }
             }
@@ -13,32 +23,32 @@ class Solution {
     }
 
     public boolean check(
-        char[][] board,
-        String word,
         int i,
         int j,
-        int m,
-        int n,
         int cur
     ) {
-        if (cur >= word.length()) return true;
+        if (cur == word.length()) return true;
+        
         if (
             i < 0 ||
             j < 0 ||
-            i >= m ||
-            j >= n ||
+            i == ROWS ||
+            j == COLS ||
             board[i][j] != word.charAt(cur)
         ) return false;
+
         boolean exist = false;
+
         if (board[i][j] == word.charAt(cur)) {
             board[i][j] += 100;
             exist =
-                check(board, word, i + 1, j, m, n, cur + 1) ||
-                check(board, word, i, j + 1, m, n, cur + 1) ||
-                check(board, word, i - 1, j, m, n, cur + 1) ||
-                check(board, word, i, j - 1, m, n, cur + 1);
+                check(i + 1, j, cur + 1) ||
+                check(i, j + 1, cur + 1) ||
+                check(i - 1, j, cur + 1) ||
+                check(i, j - 1, cur + 1);
             board[i][j] -= 100;
         }
+
         return exist;
     }
 }
