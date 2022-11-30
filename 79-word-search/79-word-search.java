@@ -4,11 +4,16 @@ class Solution {
     char[][] board;
 
     String word;
+
+    boolean[][] path;
+
     public boolean exist(char[][] board, String word) {
         this.board = board;
 
         ROWS = board.length;
         COLS = board[0].length;
+
+        path = new boolean[ROWS][COLS];
 
         this.word = word;
 
@@ -34,11 +39,12 @@ class Solution {
             j < 0 ||
             i == ROWS ||
             j == COLS ||
-            board[i][j] != word.charAt(cur)
+            board[i][j] != word.charAt(cur) ||
+            path[i][j]
         ) return false;
 
-        // Mark cell as visited
-        board[i][j] += 100;
+
+        path[i][j] = true;
 
         if (check(i + 1, j, cur + 1) ||
             check(i, j + 1, cur + 1) ||
@@ -47,8 +53,7 @@ class Solution {
             return true;
         }
 
-        // unmark cell for backtracking
-        board[i][j] -= 100;
+        path[i][j] = false;
 
         return false;
     }
