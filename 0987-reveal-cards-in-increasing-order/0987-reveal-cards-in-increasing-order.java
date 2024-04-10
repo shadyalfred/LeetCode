@@ -4,15 +4,15 @@ class Solution {
 
         int[] sortedDeck = new int[deck.length];
 
-        Queue<Integer> q = IntStream.range(0, deck.length).boxed().collect(
+        Queue<Integer> qOfIndecies = IntStream.range(0, deck.length).boxed().collect(
             Collectors.toCollection(LinkedList::new)
         );
 
         for (int card : deck) {
-            int i = q.remove();
+            int i = qOfIndecies.remove();
             sortedDeck[i] = card;
-            if (!q.isEmpty()) {
-                q.add(q.remove());
+            if (!qOfIndecies.isEmpty()) {
+                qOfIndecies.add(qOfIndecies.remove());
             }
         }
 
