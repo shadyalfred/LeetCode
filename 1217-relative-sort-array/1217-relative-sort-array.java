@@ -1,7 +1,6 @@
 class Solution {
     public int[] relativeSortArray(int[] arr1, int[] arr2) {
-        int[] indexOf = new int[1001] ;
-        Arrays.fill(indexOf, -1);
+        Integer[] indexOf = new Integer[1001] ;
         
         for (int i = 0; i < arr2.length; i++) {
             indexOf[arr2[i]] = i;
@@ -14,8 +13,8 @@ class Solution {
                     Integer i1 = indexOf[el1];
                     Integer i2 = indexOf[el2];
     
-                    boolean el1ExistsInArr2 = i1 != -1;
-                    boolean el2ExistsInArr2 = i2 != -1;
+                    boolean el1ExistsInArr2 = i1 != null;
+                    boolean el2ExistsInArr2 = i2 != null;
     
                     if (el1ExistsInArr2 && !el2ExistsInArr2) {
                         return -1;
