@@ -1,33 +1,33 @@
 class Solution {
     public int[] relativeSortArray(int[] arr1, int[] arr2) {
-        Integer[] indexOf = new Integer[1001] ;
-        
-        for (int i = 0; i < arr2.length; i++) {
-            indexOf[arr2[i]] = i;
+        Integer[] elCount = new Integer[1001];
+
+        for (int el : arr2) {
+            elCount[el] = 0;
         }
 
-        return Arrays.stream(arr1).
-            boxed().
-            sorted(
-                (el1, el2) -> {
-                    Integer i1 = indexOf[el1];
-                    Integer i2 = indexOf[el2];
-    
-                    boolean el1ExistsInArr2 = i1 != null;
-                    boolean el2ExistsInArr2 = i2 != null;
-    
-                    if (el1ExistsInArr2 && !el2ExistsInArr2) {
-                        return -1;
-                    } else if (!el1ExistsInArr2 && el2ExistsInArr2) {
-                        return 1;
-                    } else if (!el1ExistsInArr2 && !el2ExistsInArr2) {
-                        return el1.compareTo(el2);
-                    } else {
-                        return i1.compareTo(i2);
-                    }
-                }
-            ).
-            mapToInt(i -> i).
-            toArray();
+        List<Integer> res2 = new ArrayList<>(arr1.length);
+
+        for (int el : arr1) {
+            if (elCount[el] != null) {
+                elCount[el]++;
+            } else {
+                res2.add(el);
+            }
+        }
+
+        Collections.sort(res2);
+
+        List<Integer> res1 = new ArrayList<>(arr1.length - res2.size());
+
+        for (int el : arr2) {
+            for (int i = 0; i < elCount[el]; i++) {
+                res1.add(el);
+            }
+        }
+
+        res1.addAll(res2);
+
+        return res1.stream().mapToInt(Integer::intValue).toArray();
     }
 }
