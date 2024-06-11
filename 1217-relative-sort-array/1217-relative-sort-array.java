@@ -18,20 +18,18 @@ class Solution {
 
         Collections.sort(endEls);
 
-        int[] result = new int[arr1.length];
-
         int j = 0;
 
         for (int el : arr2) {
             for (int i = 0; i < elCount[el]; i++) {
-                result[j++] = el;
+                arr1[j++] = el;
             }
         }
 
         for (int el : endEls) {
-            result[j++] = el;
+            arr1[j++] = el;
         }
 
-        return result;
+        return arr1;
     }
 }
