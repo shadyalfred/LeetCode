@@ -6,28 +6,32 @@ class Solution {
             elCount[el] = 0;
         }
 
-        List<Integer> res2 = new ArrayList<>(arr1.length);
+        List<Integer> endEls = new ArrayList<>(arr1.length);
 
         for (int el : arr1) {
             if (elCount[el] != null) {
                 elCount[el]++;
             } else {
-                res2.add(el);
+                endEls.add(el);
             }
         }
 
-        Collections.sort(res2);
+        Collections.sort(endEls);
 
-        List<Integer> res1 = new ArrayList<>(arr1.length - res2.size());
+        int[] result = new int[arr1.length];
+
+        int j = 0;
 
         for (int el : arr2) {
             for (int i = 0; i < elCount[el]; i++) {
-                res1.add(el);
+                result[j++] = el;
             }
         }
 
-        res1.addAll(res2);
+        for (int el : endEls) {
+            result[j++] = el;
+        }
 
-        return res1.stream().mapToInt(Integer::intValue).toArray();
+        return result;
     }
 }
