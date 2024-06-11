@@ -1,33 +1,37 @@
 class Solution {
     public int[] relativeSortArray(int[] arr1, int[] arr2) {
-        Map<Integer, Integer> elCountMap = new HashMap<>();
+        return Arrays.stream(arr1).
+            boxed().
+            sorted(
+                (el1, el2) -> {
+                    Integer i1 = findElInArr(el1, arr2);
+                    Integer i2 = findElInArr(el2, arr2);
+    
+                    boolean el1ExistsInArr2 = i1 != -1;
+                    boolean el2ExistsInArr2 = i2 != -1;
+    
+                    if (el1ExistsInArr2 && !el2ExistsInArr2) {
+                        return -1;
+                    } else if (!el1ExistsInArr2 && el2ExistsInArr2) {
+                        return 1;
+                    } else if (!el1ExistsInArr2 && !el2ExistsInArr2) {
+                        return el1.compareTo(el2);
+                    } else {
+                        return i1.compareTo(i2);
+                    }
+                }
+            ).
+            mapToInt(i -> i).
+            toArray();
+    }
 
-        for (int el : arr2) {
-            elCountMap.put(el, 0);
-        }
-
-        List<Integer> res2 = new ArrayList<>();
-
-        for (int el : arr1) {
-            if (elCountMap.containsKey(el)) {
-                elCountMap.put(el, elCountMap.get(el) + 1);
-            } else {
-                res2.add(el);
+    private int findElInArr(int el, int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == el) {
+                return i;
             }
         }
 
-        Collections.sort(res2);
-
-        List<Integer> res1 = new ArrayList<>();
-
-        for (int el : arr2) {
-            for (int i = 0; i < elCountMap.get(el); i++) {
-                res1.add(el);
-            }
-        }
-
-        res1.addAll(res2);
-
-        return res1.stream().mapToInt(Integer::intValue).toArray();
+        return -1;
     }
 }
