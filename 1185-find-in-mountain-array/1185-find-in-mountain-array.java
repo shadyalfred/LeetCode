@@ -11,9 +11,12 @@ class Solution {
     public int findInMountainArray(int target, MountainArray mountainArr) {
         int N = mountainArr.length();
 
-        int l = 0, r = N - 1;
+        int l = 0;
+        // subtract 1 to avoid out of bounds when getting the value on the right
+        int r = N - 1;
         int iPeak = 0;
 
+        // Finding the index of the peak
         while (l < r) {
             int m = (l + r) / 2;
 
@@ -34,6 +37,7 @@ class Solution {
         l = 0;
         r = iPeak + 1;
 
+        // BS on the left side (increasing order)
         while (l < r) {
             int m = (l + r) / 2;
             int v = mountainArr.get(m);
@@ -50,6 +54,7 @@ class Solution {
         l = iPeak;
         r = N;
 
+        // BS on the right side (decreasing order)
         while (l < r) {
             int m = (l + r) / 2;
             int v = mountainArr.get(m);
