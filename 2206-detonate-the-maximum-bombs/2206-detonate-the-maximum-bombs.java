@@ -27,17 +27,8 @@ class Solution {
         int maxBombs = 0;
 
         for (int i = 0; i < bombs.length; i++) {
-            dfs(i, adj, isBombed);
-
-            int countBombs = 0;
-            for (int j = 0; j < isBombed.length; j++) {
-                if (isBombed[j]) {
-                    countBombs++;
-                }
-                isBombed[j] = false;
-            }
-
-            maxBombs = Math.max(maxBombs, countBombs);
+            maxBombs = Math.max(maxBombs, dfs(i, adj, isBombed));
+            Arrays.fill(isBombed, false);
         }
 
 
@@ -51,19 +42,21 @@ class Solution {
         return Math.sqrt(dX * dX + dY * dY);
     }
 
-    private void dfs(int bombI, List<List<Integer>> adj, boolean[] isBombed) {
+    private int dfs(int bombI, List<List<Integer>> adj, boolean[] isBombed) {
         if (isBombed[bombI]) {
-            return;
+            return 0;
         }
 
         isBombed[bombI] = true;
 
         List<Integer> neighbors = adj.get(bombI);
 
+        int count = 1;
+
         for (int neighbor : neighbors) {
-            dfs(neighbor, adj, isBombed);
+            count += dfs(neighbor, adj, isBombed);
         }
 
-        return;
+        return count;
     }
 }
