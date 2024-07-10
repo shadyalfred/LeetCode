@@ -1,9 +1,10 @@
 class Solution {
     public int maxProductDifference(int[] nums) {
-        int num1 = Integer.MIN_VALUE,
-        num2 = Integer.MIN_VALUE,
-        num3 = Integer.MAX_VALUE,
-        num4 = Integer.MAX_VALUE;
+        int num1 = Integer.MIN_VALUE, // biggest number
+        num2 = Integer.MIN_VALUE;     // second biggest number
+
+        int num3 = Integer.MAX_VALUE, // smallest number
+        num4 = Integer.MAX_VALUE;     // second smallest number
 
         for (int num : nums) {
             if (num > num1) {
