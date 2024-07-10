@@ -71,6 +71,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1720-crawler-log-folder](https://github.com/shadyalfred/LeetCode/tree/master/1720-crawler-log-folder) |
 | [1803-average-waiting-time](https://github.com/shadyalfred/LeetCode/tree/master/1803-average-waiting-time) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/shadyalfred/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
+| [2042-maximum-product-difference-between-two-pairs](https://github.com/shadyalfred/LeetCode/tree/master/2042-maximum-product-difference-between-two-pairs) |
 | [2756-buy-two-chocolates](https://github.com/shadyalfred/LeetCode/tree/master/2756-buy-two-chocolates) |
 ## String
 |  |
@@ -102,5 +103,6 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Sorting
 |  |
 | ------- |
+| [2042-maximum-product-difference-between-two-pairs](https://github.com/shadyalfred/LeetCode/tree/master/2042-maximum-product-difference-between-two-pairs) |
 | [2756-buy-two-chocolates](https://github.com/shadyalfred/LeetCode/tree/master/2756-buy-two-chocolates) |
 <!---LeetCode Topics End-->
