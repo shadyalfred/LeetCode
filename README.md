@@ -70,6 +70,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [1720-crawler-log-folder](https://github.com/shadyalfred/LeetCode/tree/master/1720-crawler-log-folder) |
 | [1803-average-waiting-time](https://github.com/shadyalfred/LeetCode/tree/master/1803-average-waiting-time) |
+| [1951-find-the-winner-of-the-circular-game](https://github.com/shadyalfred/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
 ## String
 |  |
 | ------- |
@@ -82,4 +83,17 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [1803-average-waiting-time](https://github.com/shadyalfred/LeetCode/tree/master/1803-average-waiting-time) |
+| [1951-find-the-winner-of-the-circular-game](https://github.com/shadyalfred/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
+## Math
+|  |
+| ------- |
+| [1951-find-the-winner-of-the-circular-game](https://github.com/shadyalfred/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
+## Recursion
+|  |
+| ------- |
+| [1951-find-the-winner-of-the-circular-game](https://github.com/shadyalfred/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
+## Queue
+|  |
+| ------- |
+| [1951-find-the-winner-of-the-circular-game](https://github.com/shadyalfred/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
 <!---LeetCode Topics End-->
