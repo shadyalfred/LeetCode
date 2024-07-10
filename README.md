@@ -63,3 +63,18 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [1112-find-words-that-can-be-formed-by-characters](https://github.com/shadyalfred/LeetCode/tree/master/1112-find-words-that-can-be-formed-by-characters) |
 | [1547-destination-city](https://github.com/shadyalfred/LeetCode/tree/master/1547-destination-city) |
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [1720-crawler-log-folder](https://github.com/shadyalfred/LeetCode/tree/master/1720-crawler-log-folder) |
+## String
+|  |
+| ------- |
+| [1720-crawler-log-folder](https://github.com/shadyalfred/LeetCode/tree/master/1720-crawler-log-folder) |
+## Stack
+|  |
+| ------- |
+| [1720-crawler-log-folder](https://github.com/shadyalfred/LeetCode/tree/master/1720-crawler-log-folder) |
+<!---LeetCode Topics End-->
