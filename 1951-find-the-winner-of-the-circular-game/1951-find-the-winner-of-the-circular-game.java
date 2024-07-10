@@ -1,20 +1,17 @@
 class Solution {
+    int k;
+
     public int findTheWinner(int n, int k) {
-        Deque<Integer> deque = new LinkedList<>();
-        
-        for (int i = 1; i <= n; i++) {
-            deque.offerLast(i);
+        this.k = k;
+
+        return helper(n) + 1;
+    }
+
+    private int helper(int n) {
+        if (n == 1) {
+            return 0;
         }
 
-        while (deque.size() > 1) {
-            for (int i = 0; i < k; i++) {
-                int player = deque.pollFirst();
-                deque.offerLast(player);
-            }
-
-            deque.pollLast();
-        }
-
-        return deque.poll();
+        return (helper(n - 1) + k) % n;
     }
 }
