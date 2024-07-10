@@ -1,17 +1,13 @@
 class Solution {
-    int k;
-
     public int findTheWinner(int n, int k) {
-        this.k = k;
+        // See https://www.youtube.com/watch?v=PBBQgW_75e0 for
+        // explanation.
+        int result = 0;
 
-        return helper(n) + 1;
-    }
-
-    private int helper(int n) {
-        if (n == 1) {
-            return 0;
+        for (int players = 1; players <= n; players++) {
+            result = (result + k) % players;
         }
 
-        return (helper(n - 1) + k) % n;
+        return result + 1;
     }
 }
