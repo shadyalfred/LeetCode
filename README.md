@@ -90,6 +90,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Math
 |  |
 | ------- |
+| [0633-sum-of-square-numbers](https://github.com/shadyalfred/LeetCode/tree/master/0633-sum-of-square-numbers) |
 | [1642-water-bottles](https://github.com/shadyalfred/LeetCode/tree/master/1642-water-bottles) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/shadyalfred/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
 ## Recursion
@@ -105,4 +106,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [2042-maximum-product-difference-between-two-pairs](https://github.com/shadyalfred/LeetCode/tree/master/2042-maximum-product-difference-between-two-pairs) |
 | [2756-buy-two-chocolates](https://github.com/shadyalfred/LeetCode/tree/master/2756-buy-two-chocolates) |
+## Two Pointers
+|  |
+| ------- |
+| [0633-sum-of-square-numbers](https://github.com/shadyalfred/LeetCode/tree/master/0633-sum-of-square-numbers) |
+## Binary Search
+|  |
+| ------- |
+| [0633-sum-of-square-numbers](https://github.com/shadyalfred/LeetCode/tree/master/0633-sum-of-square-numbers) |
 <!---LeetCode Topics End-->
