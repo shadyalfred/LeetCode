@@ -15,7 +15,6 @@ class Solution {
         result = Math.min(result, nums[N - 1] - nums[2]);
         result = Math.min(result, nums[N] - nums[3]);
         
-
         return result;
     }
 }
