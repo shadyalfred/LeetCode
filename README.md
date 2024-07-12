@@ -120,4 +120,16 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/shadyalfred/LeetCode/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
+## Tree
+|  |
+| ------- |
+| [0904-leaf-similar-trees](https://github.com/shadyalfred/LeetCode/tree/master/0904-leaf-similar-trees) |
+## Depth-First Search
+|  |
+| ------- |
+| [0904-leaf-similar-trees](https://github.com/shadyalfred/LeetCode/tree/master/0904-leaf-similar-trees) |
+## Binary Tree
+|  |
+| ------- |
+| [0904-leaf-similar-trees](https://github.com/shadyalfred/LeetCode/tree/master/0904-leaf-similar-trees) |
 <!---LeetCode Topics End-->
