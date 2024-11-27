@@ -139,4 +139,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0975-range-sum-of-bst](https://github.com/shadyalfred/LeetCode/tree/master/0975-range-sum-of-bst) |
+## Graph
+|  |
+| ------- |
+| [3189-find-champion-ii](https://github.com/shadyalfred/LeetCode/tree/master/3189-find-champion-ii) |
 <!---LeetCode Topics End-->
