@@ -13,7 +13,7 @@ class Solution {
             } else if (nums1[i][0] < nums2[j][0]) {
                 res.add(new int[]{nums1[i][0], nums1[i][1]});
                 i++;
-            } else if (nums2[j][0] < nums1[i][0]) {
+            } else {
                 res.add(new int[]{nums2[j][0], nums2[j][1]});
                 j++;
             }
