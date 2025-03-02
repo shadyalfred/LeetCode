@@ -1,6 +1,6 @@
 class Solution {
     public int[][] mergeArrays(int[][] nums1, int[][] nums2) {
-        List<int[]> res = new ArrayList<>(nums1.length + nums2.length);
+        List<int[]> res = new ArrayList<int[]>(nums1.length + nums2.length);
 
         int i = 0;
         int j = 0;
@@ -29,6 +29,6 @@ class Solution {
             j++;
         }
 
-        return res.toArray(new int[0][]);
+        return res.toArray(new int[0][2]);
     }
 }
