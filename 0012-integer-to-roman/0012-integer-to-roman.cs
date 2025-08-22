@@ -2,10 +2,16 @@ public class Solution {
     public string IntToRoman(int num) {
         StringBuilder sb = new(4);
 
+        List<int> digits = new List<int>(4);
+        while (num > 0) {
+            digits.Add(num % 10);
+            num /= 10;
+        }
+
         string n = num.ToString();
-        for (int i = 0; i < n.Length; i++) {
-            int d = n[i] - '0';
-            int f = n.Length - i;
+        for (int i = digits.Count - 1; i >= 0; i--) {
+            int d = digits[i];
+            int f = i + 1;
             if (f == 4) {
                 while (d > 0) {
                     sb.Append('M');
