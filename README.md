@@ -82,6 +82,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## String
 |  |
 | ------- |
+| [0012-integer-to-roman](https://github.com/shadyalfred/LeetCode/tree/master/0012-integer-to-roman) |
 | [1720-crawler-log-folder](https://github.com/shadyalfred/LeetCode/tree/master/1720-crawler-log-folder) |
 ## Stack
 |  |
@@ -97,6 +98,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Math
 |  |
 | ------- |
+| [0012-integer-to-roman](https://github.com/shadyalfred/LeetCode/tree/master/0012-integer-to-roman) |
 | [0633-sum-of-square-numbers](https://github.com/shadyalfred/LeetCode/tree/master/0633-sum-of-square-numbers) |
 | [1642-water-bottles](https://github.com/shadyalfred/LeetCode/tree/master/1642-water-bottles) |
 | [1889-check-if-number-is-a-sum-of-powers-of-three](https://github.com/shadyalfred/LeetCode/tree/master/1889-check-if-number-is-a-sum-of-powers-of-three) |
@@ -170,6 +172,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Hash Table
 |  |
 | ------- |
+| [0012-integer-to-roman](https://github.com/shadyalfred/LeetCode/tree/master/0012-integer-to-roman) |
 | [2308-divide-array-into-equal-pairs](https://github.com/shadyalfred/LeetCode/tree/master/2308-divide-array-into-equal-pairs) |
 | [2707-merge-two-2d-arrays-by-summing-values](https://github.com/shadyalfred/LeetCode/tree/master/2707-merge-two-2d-arrays-by-summing-values) |
 | [3227-find-missing-and-repeated-values](https://github.com/shadyalfred/LeetCode/tree/master/3227-find-missing-and-repeated-values) |
