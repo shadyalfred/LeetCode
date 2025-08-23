@@ -68,6 +68,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Array
 |  |
 | ------- |
+| [0048-rotate-image](https://github.com/shadyalfred/LeetCode/tree/master/0048-rotate-image) |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/shadyalfred/LeetCode/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
 | [1720-crawler-log-folder](https://github.com/shadyalfred/LeetCode/tree/master/1720-crawler-log-folder) |
 | [1803-average-waiting-time](https://github.com/shadyalfred/LeetCode/tree/master/1803-average-waiting-time) |
@@ -99,6 +100,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0012-integer-to-roman](https://github.com/shadyalfred/LeetCode/tree/master/0012-integer-to-roman) |
+| [0048-rotate-image](https://github.com/shadyalfred/LeetCode/tree/master/0048-rotate-image) |
 | [0633-sum-of-square-numbers](https://github.com/shadyalfred/LeetCode/tree/master/0633-sum-of-square-numbers) |
 | [1642-water-bottles](https://github.com/shadyalfred/LeetCode/tree/master/1642-water-bottles) |
 | [1889-check-if-number-is-a-sum-of-powers-of-three](https://github.com/shadyalfred/LeetCode/tree/master/1889-check-if-number-is-a-sum-of-powers-of-three) |
@@ -167,6 +169,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Matrix
 |  |
 | ------- |
+| [0048-rotate-image](https://github.com/shadyalfred/LeetCode/tree/master/0048-rotate-image) |
 | [2764-maximum-number-of-fish-in-a-grid](https://github.com/shadyalfred/LeetCode/tree/master/2764-maximum-number-of-fish-in-a-grid) |
 | [3227-find-missing-and-repeated-values](https://github.com/shadyalfred/LeetCode/tree/master/3227-find-missing-and-repeated-values) |
 ## Hash Table
