@@ -8,8 +8,9 @@ public class Solution {
                     r++;
                 }
                 if (r != l + 1) {
+                    int oldCount = count;
                     count += r - l - 1;
-                    Shrink(l + 1, r, count, nums);
+                    Shrink(l + 1, r, oldCount, nums);
                 }
             }
         }
@@ -17,7 +18,7 @@ public class Solution {
     }
 
     private void Shrink(int l, int r, int count, int[] nums) {
-        for (int i = 0; r + i < nums.Length; i++) {
+        for (int i = 0; r + i < nums.Length - count; i++) {
             nums[l + i] = nums[r + i];
         }
     }
