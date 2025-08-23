@@ -69,6 +69,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0048-rotate-image](https://github.com/shadyalfred/LeetCode/tree/master/0048-rotate-image) |
+| [0080-remove-duplicates-from-sorted-array-ii](https://github.com/shadyalfred/LeetCode/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/shadyalfred/LeetCode/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
 | [1720-crawler-log-folder](https://github.com/shadyalfred/LeetCode/tree/master/1720-crawler-log-folder) |
 | [1803-average-waiting-time](https://github.com/shadyalfred/LeetCode/tree/master/1803-average-waiting-time) |
@@ -123,6 +124,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Two Pointers
 |  |
 | ------- |
+| [0080-remove-duplicates-from-sorted-array-ii](https://github.com/shadyalfred/LeetCode/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
 | [0633-sum-of-square-numbers](https://github.com/shadyalfred/LeetCode/tree/master/0633-sum-of-square-numbers) |
 | [2265-partition-array-according-to-given-pivot](https://github.com/shadyalfred/LeetCode/tree/master/2265-partition-array-according-to-given-pivot) |
 | [2707-merge-two-2d-arrays-by-summing-values](https://github.com/shadyalfred/LeetCode/tree/master/2707-merge-two-2d-arrays-by-summing-values) |
