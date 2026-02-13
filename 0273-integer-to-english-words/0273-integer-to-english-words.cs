@@ -31,12 +31,6 @@ public class Solution {
       parts.Add(part);
     }
 
-    foreach (var p in parts)
-    {
-      Console.Write($"{p[0]} {p[1]} {p[2]}\n");
-      Console.WriteLine("---");
-    }
-
     i = parts.Count - 1;
 
     for (; i >= 0; i--)
