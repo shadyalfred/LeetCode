@@ -32,16 +32,16 @@ public class Solution {
     i = parts.Count - 1;
     for (; i >= 0; i--)
     {
-      var p = parts[i];
+      part = parts[i];
 
       for (int j = 0; j < 3; j++)
       {
         if (j == 1)
         {
-          if (p[j] == 1)
+          if (part[j] == 1)
           {
             words.Add(
-              (p[j] * 10 + p[j + 1]) switch
+              (part[j] * 10 + part[j + 1]) switch
               {
                 10 => "Ten",
                 11 => "Eleven",
@@ -58,10 +58,10 @@ public class Solution {
             );
             j += 2;
           }
-          else if (p[j] != 0)
+          else if (part[j] != 0)
           {
             words.Add(
-              p[j] switch
+              part[j] switch
               {
                 2 => "Twenty",
                 3 => "Thirty",
@@ -79,10 +79,10 @@ public class Solution {
           continue;
         }
 
-        if (p[j] != 0)
+        if (part[j] != 0)
         {
           words.Add(
-            p[j] switch
+            part[j] switch
             {
               1 => "One",
               2 => "Two",
@@ -98,13 +98,13 @@ public class Solution {
           );
         }
 
-        if (j == 0 && p[j] != 0)
+        if (j == 0 && part[j] != 0)
         {
           words.Add("Hundred");
         }
       }
   
-      if (i > 0 && p[0] + p[1] + p[2] != 0)
+      if (i > 0 && part[0] + part[1] + part[2] != 0)
       {
         words.Add(
           i switch
