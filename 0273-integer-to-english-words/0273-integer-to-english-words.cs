@@ -41,7 +41,7 @@ public class Solution {
           if (part[j] == 1)
           {
             words.Add(
-              (part[j] * 10 + part[j + 1]) switch
+              (10 + part[j + 1]) switch
               {
                 10 => "Ten",
                 11 => "Eleven",
