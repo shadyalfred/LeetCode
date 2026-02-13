@@ -6,7 +6,6 @@ public class Solution {
     }
 
     var words = new List<string>(8);
-
     var parts = new List<byte[]>(8);
 
     var i = 2;
@@ -25,25 +24,23 @@ public class Solution {
         part = new byte[3];
       }
     }
-
     if (i != 2)
     {
       parts.Add(part);
     }
 
     i = parts.Count - 1;
-
     for (; i >= 0; i--)
     {
       var p = parts[i];
 
-      int j = 0;
-      while (i == parts.Count - 1 && p[j] == 0)
-      {
-        j++;
-      }
+      // int j = 0;
+      // while (i == parts.Count - 1 && p[j] == 0)
+      // {
+      //   j++;
+      // }
 
-      for (; j < 3; j++)
+      for (int j = 0; j < 3; j++)
       {
         if (j == 1)
         {
