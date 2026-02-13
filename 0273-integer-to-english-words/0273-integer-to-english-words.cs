@@ -34,12 +34,6 @@ public class Solution {
     {
       var p = parts[i];
 
-      // int j = 0;
-      // while (i == parts.Count - 1 && p[j] == 0)
-      // {
-      //   j++;
-      // }
-
       for (int j = 0; j < 3; j++)
       {
         if (j == 1)
@@ -110,14 +104,14 @@ public class Solution {
         }
       }
   
-      if (i + 1 > 1 && p[0] + p[1] + p[2] != 0)
+      if (i > 0 && p[0] + p[1] + p[2] != 0)
       {
         words.Add(
-          (i + 1) switch
+          i switch
           {
-            2 => "Thousand",
-            3 => "Million",
-            4 => "Billion",
+            1 => "Thousand",
+            2 => "Million",
+            3 => "Billion",
             _ => "",
           }
         );
