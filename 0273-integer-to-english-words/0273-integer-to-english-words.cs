@@ -5,7 +5,7 @@ public class Solution {
       return "Zero";
     }
 
-    var words = new List<string>(8);
+    var words = new List<string>(16);
     var parts = new List<byte[]>(8);
 
     var i = 2;
