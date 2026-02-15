@@ -36,6 +36,11 @@ public class Solution {
 
       for (int j = 0; j < 3; j++)
       {
+        if (part[j] == 0)
+        {
+          continue;
+        }
+
         if (j == 1)
         {
           if (part[j] == 1)
@@ -58,7 +63,7 @@ public class Solution {
             );
             j += 2;
           }
-          else if (part[j] != 0)
+          else
           {
             words.Add(
               part[j] switch
@@ -79,26 +84,23 @@ public class Solution {
           continue;
         }
 
-        if (part[j] != 0)
-        {
-          words.Add(
-            part[j] switch
-            {
-              1 => "One",
-              2 => "Two",
-              3 => "Three",
-              4 => "Four",
-              5 => "Five",
-              6 => "Six",
-              7 => "Seven",
-              8 => "Eight",
-              9 => "Nine",
-              _ => "",
-            }
-          );
-        }
+        words.Add(
+          part[j] switch
+          {
+            1 => "One",
+            2 => "Two",
+            3 => "Three",
+            4 => "Four",
+            5 => "Five",
+            6 => "Six",
+            7 => "Seven",
+            8 => "Eight",
+            9 => "Nine",
+            _ => "",
+          }
+        );
 
-        if (j == 0 && part[j] != 0)
+        if (j == 0)
         {
           words.Add("Hundred");
         }
