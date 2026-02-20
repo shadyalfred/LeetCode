@@ -75,6 +75,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1803-average-waiting-time](https://github.com/shadyalfred/LeetCode/tree/master/1803-average-waiting-time) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/shadyalfred/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2042-maximum-product-difference-between-two-pairs](https://github.com/shadyalfred/LeetCode/tree/master/2042-maximum-product-difference-between-two-pairs) |
+| [2058-concatenation-of-array](https://github.com/shadyalfred/LeetCode/tree/master/2058-concatenation-of-array) |
 | [2265-partition-array-according-to-given-pivot](https://github.com/shadyalfred/LeetCode/tree/master/2265-partition-array-according-to-given-pivot) |
 | [2308-divide-array-into-equal-pairs](https://github.com/shadyalfred/LeetCode/tree/master/2308-divide-array-into-equal-pairs) |
 | [2707-merge-two-2d-arrays-by-summing-values](https://github.com/shadyalfred/LeetCode/tree/master/2707-merge-two-2d-arrays-by-summing-values) |
@@ -97,6 +98,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1642-water-bottles](https://github.com/shadyalfred/LeetCode/tree/master/1642-water-bottles) |
 | [1803-average-waiting-time](https://github.com/shadyalfred/LeetCode/tree/master/1803-average-waiting-time) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/shadyalfred/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
+| [2058-concatenation-of-array](https://github.com/shadyalfred/LeetCode/tree/master/2058-concatenation-of-array) |
 | [2265-partition-array-according-to-given-pivot](https://github.com/shadyalfred/LeetCode/tree/master/2265-partition-array-according-to-given-pivot) |
 ## Math
 |  |
