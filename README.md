@@ -70,6 +70,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0048-rotate-image](https://github.com/shadyalfred/LeetCode/tree/master/0048-rotate-image) |
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/shadyalfred/LeetCode/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
+| [0150-evaluate-reverse-polish-notation](https://github.com/shadyalfred/LeetCode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0485-max-consecutive-ones](https://github.com/shadyalfred/LeetCode/tree/master/0485-max-consecutive-ones) |
 | [0645-set-mismatch](https://github.com/shadyalfred/LeetCode/tree/master/0645-set-mismatch) |
 | [1482-how-many-numbers-are-smaller-than-the-current-number](https://github.com/shadyalfred/LeetCode/tree/master/1482-how-many-numbers-are-smaller-than-the-current-number) |
@@ -96,6 +97,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Stack
 |  |
 | ------- |
+| [0150-evaluate-reverse-polish-notation](https://github.com/shadyalfred/LeetCode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [1552-build-an-array-with-stack-operations](https://github.com/shadyalfred/LeetCode/tree/master/1552-build-an-array-with-stack-operations) |
 | [1720-crawler-log-folder](https://github.com/shadyalfred/LeetCode/tree/master/1720-crawler-log-folder) |
 ## Simulation
@@ -112,6 +114,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0012-integer-to-roman](https://github.com/shadyalfred/LeetCode/tree/master/0012-integer-to-roman) |
 | [0048-rotate-image](https://github.com/shadyalfred/LeetCode/tree/master/0048-rotate-image) |
+| [0150-evaluate-reverse-polish-notation](https://github.com/shadyalfred/LeetCode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0273-integer-to-english-words](https://github.com/shadyalfred/LeetCode/tree/master/0273-integer-to-english-words) |
 | [0633-sum-of-square-numbers](https://github.com/shadyalfred/LeetCode/tree/master/0633-sum-of-square-numbers) |
 | [1642-water-bottles](https://github.com/shadyalfred/LeetCode/tree/master/1642-water-bottles) |
