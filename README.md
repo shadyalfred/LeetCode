@@ -157,17 +157,20 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Tree
 |  |
 | ------- |
+| [0404-sum-of-left-leaves](https://github.com/shadyalfred/LeetCode/tree/master/0404-sum-of-left-leaves) |
 | [0904-leaf-similar-trees](https://github.com/shadyalfred/LeetCode/tree/master/0904-leaf-similar-trees) |
 | [0975-range-sum-of-bst](https://github.com/shadyalfred/LeetCode/tree/master/0975-range-sum-of-bst) |
 ## Depth-First Search
 |  |
 | ------- |
+| [0404-sum-of-left-leaves](https://github.com/shadyalfred/LeetCode/tree/master/0404-sum-of-left-leaves) |
 | [0904-leaf-similar-trees](https://github.com/shadyalfred/LeetCode/tree/master/0904-leaf-similar-trees) |
 | [0975-range-sum-of-bst](https://github.com/shadyalfred/LeetCode/tree/master/0975-range-sum-of-bst) |
 | [2764-maximum-number-of-fish-in-a-grid](https://github.com/shadyalfred/LeetCode/tree/master/2764-maximum-number-of-fish-in-a-grid) |
 ## Binary Tree
 |  |
 | ------- |
+| [0404-sum-of-left-leaves](https://github.com/shadyalfred/LeetCode/tree/master/0404-sum-of-left-leaves) |
 | [0904-leaf-similar-trees](https://github.com/shadyalfred/LeetCode/tree/master/0904-leaf-similar-trees) |
 | [0975-range-sum-of-bst](https://github.com/shadyalfred/LeetCode/tree/master/0975-range-sum-of-bst) |
 ## Binary Search Tree
@@ -181,6 +184,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Breadth-First Search
 |  |
 | ------- |
+| [0404-sum-of-left-leaves](https://github.com/shadyalfred/LeetCode/tree/master/0404-sum-of-left-leaves) |
 | [2764-maximum-number-of-fish-in-a-grid](https://github.com/shadyalfred/LeetCode/tree/master/2764-maximum-number-of-fish-in-a-grid) |
 ## Union Find
 |  |
