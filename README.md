@@ -217,6 +217,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0405-convert-a-number-to-hexadecimal](https://github.com/shadyalfred/LeetCode/tree/master/0405-convert-a-number-to-hexadecimal) |
 | [0645-set-mismatch](https://github.com/shadyalfred/LeetCode/tree/master/0645-set-mismatch) |
+| [0899-binary-gap](https://github.com/shadyalfred/LeetCode/tree/master/0899-binary-gap) |
 | [2308-divide-array-into-equal-pairs](https://github.com/shadyalfred/LeetCode/tree/master/2308-divide-array-into-equal-pairs) |
 ## Counting
 |  |
