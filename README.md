@@ -74,6 +74,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0485-max-consecutive-ones](https://github.com/shadyalfred/LeetCode/tree/master/0485-max-consecutive-ones) |
 | [0496-next-greater-element-i](https://github.com/shadyalfred/LeetCode/tree/master/0496-next-greater-element-i) |
 | [0645-set-mismatch](https://github.com/shadyalfred/LeetCode/tree/master/0645-set-mismatch) |
+| [0717-1-bit-and-2-bit-characters](https://github.com/shadyalfred/LeetCode/tree/master/0717-1-bit-and-2-bit-characters) |
 | [1482-how-many-numbers-are-smaller-than-the-current-number](https://github.com/shadyalfred/LeetCode/tree/master/1482-how-many-numbers-are-smaller-than-the-current-number) |
 | [1552-build-an-array-with-stack-operations](https://github.com/shadyalfred/LeetCode/tree/master/1552-build-an-array-with-stack-operations) |
 | [1580-shuffle-the-array](https://github.com/shadyalfred/LeetCode/tree/master/1580-shuffle-the-array) |
