@@ -97,6 +97,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0273-integer-to-english-words](https://github.com/shadyalfred/LeetCode/tree/master/0273-integer-to-english-words) |
 | [0405-convert-a-number-to-hexadecimal](https://github.com/shadyalfred/LeetCode/tree/master/0405-convert-a-number-to-hexadecimal) |
 | [0434-number-of-segments-in-a-string](https://github.com/shadyalfred/LeetCode/tree/master/0434-number-of-segments-in-a-string) |
+| [0459-repeated-substring-pattern](https://github.com/shadyalfred/LeetCode/tree/master/0459-repeated-substring-pattern) |
 | [1720-crawler-log-folder](https://github.com/shadyalfred/LeetCode/tree/master/1720-crawler-log-folder) |
 ## Stack
 |  |
@@ -231,4 +232,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0496-next-greater-element-i](https://github.com/shadyalfred/LeetCode/tree/master/0496-next-greater-element-i) |
+## String Matching
+|  |
+| ------- |
+| [0459-repeated-substring-pattern](https://github.com/shadyalfred/LeetCode/tree/master/0459-repeated-substring-pattern) |
 <!---LeetCode Topics End-->
