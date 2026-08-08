@@ -1,28 +1,31 @@
 class Solution {
     public int largestRectangleArea(int[] heights) {
+        Deque<Integer> heightRuns = new ArrayDeque<>();
+        Deque<Integer> heightRunsIndecies = new ArrayDeque<>();
+
         int maxArea = 0;
-        
-        Stack<Pair<Integer, Integer>> stack = new Stack<>();
         
         for (int i = 0; i < heights.length; i++) {
             int start = i;
-            int height = heights[i];
-            
-            while (! stack.empty() && stack.peek().getValue() > height) {
-                var rec = stack.pop();
-                
-                maxArea = Math.max(maxArea, rec.getValue() * (i - rec.getKey()));
-                
-                start = rec.getKey();
+            while (!heightRuns.isEmpty() && heights[i] < heightRuns.peek()) {
+                int heightRun = heightRuns.pop();
+                int heightRunIndex = heightRunsIndecies.pop();
+
+                maxArea = Math.max(maxArea, heightRun * (i - heightRunIndex));
+                start = heightRunIndex;
             }
-            
-            stack.push(new Pair(start, height));
+
+            heightRuns.push(heights[i]);
+            heightRunsIndecies.push(start);
         }
-        
-        for (var rec : stack) {
-            maxArea = Math.max(maxArea, rec.getValue() * (heights.length - rec.getKey()));
+
+        while (!heightRuns.isEmpty()) {
+            int heightRun = heightRuns.pop();
+            int heightRunIndex = heightRunsIndecies.pop();
+
+            maxArea = Math.max(maxArea, heightRun * (heights.length - heightRunIndex));
         }
-        
+
         return maxArea;
     }
 }
