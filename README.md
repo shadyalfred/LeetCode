@@ -132,6 +132,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Recursion
 |  |
 | ------- |
+| [0206-reverse-linked-list](https://github.com/shadyalfred/LeetCode/tree/master/0206-reverse-linked-list) |
 | [0273-integer-to-english-words](https://github.com/shadyalfred/LeetCode/tree/master/0273-integer-to-english-words) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/shadyalfred/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
 ## Queue
@@ -236,4 +237,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0459-repeated-substring-pattern](https://github.com/shadyalfred/LeetCode/tree/master/0459-repeated-substring-pattern) |
+## Linked List
+|  |
+| ------- |
+| [0206-reverse-linked-list](https://github.com/shadyalfred/LeetCode/tree/master/0206-reverse-linked-list) |
 <!---LeetCode Topics End-->
