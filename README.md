@@ -68,6 +68,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Array
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/shadyalfred/LeetCode/tree/master/0001-two-sum) |
 | [0048-rotate-image](https://github.com/shadyalfred/LeetCode/tree/master/0048-rotate-image) |
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/shadyalfred/LeetCode/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/shadyalfred/LeetCode/tree/master/0150-evaluate-reverse-polish-notation) |
@@ -207,6 +208,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Hash Table
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/shadyalfred/LeetCode/tree/master/0001-two-sum) |
 | [0012-integer-to-roman](https://github.com/shadyalfred/LeetCode/tree/master/0012-integer-to-roman) |
 | [0496-next-greater-element-i](https://github.com/shadyalfred/LeetCode/tree/master/0496-next-greater-element-i) |
 | [0645-set-mismatch](https://github.com/shadyalfred/LeetCode/tree/master/0645-set-mismatch) |
