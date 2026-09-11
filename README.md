@@ -73,6 +73,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0066-plus-one](https://github.com/shadyalfred/LeetCode/tree/master/0066-plus-one) |
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/shadyalfred/LeetCode/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
 | [0084-largest-rectangle-in-histogram](https://github.com/shadyalfred/LeetCode/tree/master/0084-largest-rectangle-in-histogram) |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/shadyalfred/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/shadyalfred/LeetCode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0373-find-k-pairs-with-smallest-sums](https://github.com/shadyalfred/LeetCode/tree/master/0373-find-k-pairs-with-smallest-sums) |
 | [0485-max-consecutive-ones](https://github.com/shadyalfred/LeetCode/tree/master/0485-max-consecutive-ones) |
@@ -263,4 +264,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0373-find-k-pairs-with-smallest-sums](https://github.com/shadyalfred/LeetCode/tree/master/0373-find-k-pairs-with-smallest-sums) |
 | [1479-construct-target-array-with-multiple-sums](https://github.com/shadyalfred/LeetCode/tree/master/1479-construct-target-array-with-multiple-sums) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/shadyalfred/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 <!---LeetCode Topics End-->
