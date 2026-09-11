@@ -14,18 +14,19 @@
  * }
  */
 class Solution {
-    public TreeNode invertTree(TreeNode root) {
+    private void dfs(TreeNode root) {
         if (root == null) {
-            return root;
+            return;
         }
-        
-        var temp = root.left;
+
+        TreeNode tmp = root.left;
         root.left = root.right;
-        root.right = temp;
-        
-        invertTree(root.left);
-        invertTree(root.right);
-        
+        root.right = tmp;
+        dfs(root.left);
+        dfs(root.right);
+    }
+    public TreeNode invertTree(TreeNode root) {
+        dfs(root);
         return root;
     }
 }
